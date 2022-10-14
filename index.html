@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio Homepage</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-link-wrapper active-nav-link">
+            <a href="index.html">Projects</a>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="about.html">About Me</a>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="brand">
+            <div>NAFISA HOSSAIN NUJAT</div>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+          <div
+            onclick="window.open('https://github.com/nhnujhat/OMNISHEBA','mywindow');"
+            style="cursor: pointer"
+            class="portfolio-item-wrapper"
+          >
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/omnisheba.jpg)"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/omnisheba.png" />
+              </div>
+              <div class="subtitle">
+                An Android application to assist healthcare providers and
+                seekers connect, built with Java and Firebase.
+              </div>
+            </div>
+          </div>
+          <div
+            onclick="window.open('https://github.com/nhnujhat/Thrive','mywindow');"
+            style="cursor: pointer"
+            class="portfolio-item-wrapper"
+          >
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/thrive.jpg)"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/thrive.png" />
+              </div>
+              <div class="subtitle">
+                An Android application to track productivity and share with
+                friends, built with Java and Firebase.
+              </div>
+            </div>
+          </div>
+          <div
+            onclick="window.open('https://github.com/nhnujhat/Note_Ally','mywindow');"
+            style="cursor: pointer"
+            class="portfolio-item-wrapper"
+          >
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/noteally.jpg)"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/noteally.png" />
+              </div>
+              <div class="subtitle">
+                An Android application to assist students and job seekers to
+                collaborate, built with Java and Firebase.
+              </div>
+            </div>
+          </div>
+          <div
+            onclick="window.open('https://github.com/nhnujhat/BookNerd','mywindow');"
+            style="cursor: pointer"
+            class="portfolio-item-wrapper"
+          >
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/booknerd.jpg)"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/booknerd.png" />
+              </div>
+              <div class="subtitle">
+                An Android application for reading ebooks and listening to
+                audiobooks, built with Dart and Firebase.
+              </div>
+            </div>
+          </div>
+          <div
+            onclick="window.open('https://github.com/nhnujhat/GhuraGhuriApp','mywindow');"
+            style="cursor: pointer"
+            class="portfolio-item-wrapper"
+          >
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/ghuraghuri.jpg)"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/ghuraghuri.png" />
+              </div>
+              <div class="subtitle">
+                A website and an Android application for travel blogs, built
+                with HTML, CSS, JavaScript, Java and Firebase.
+              </div>
+            </div>
+          </div>
+          <div
+            onclick="window.open('https://github.com/nhnujhat/UniFO','mywindow');"
+            style="cursor: pointer"
+            class="portfolio-item-wrapper"
+          >
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/unifo.jpg)"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/unifo.png" />
+              </div>
+              <div class="subtitle">
+                A university admission portal website for students in
+                Bangladesh, built with HTML, CSS and JavaScript.
+              </div>
+            </div>
+          </div>
+          <div
+            onclick="window.open('https://github.com/nhnujhat/Customer_service-management','mywindow');"
+            style="cursor: pointer"
+            class="portfolio-item-wrapper"
+          >
+            <div
+              class="portfolio-img-background"
+              style="
+                background-image: url(images/customerservicemanagement.jpg);
+              "
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/customerservicemanagement.png" />
+              </div>
+              <div class="subtitle">
+                A customer service management and employee management system for
+                companies and businesses, built with C++.
+              </div>
+            </div>
+          </div>
+          <div
+            onclick="window.open('https://github.com/nhnujhat/Bandersnatch','mywindow');"
+            style="cursor: pointer"
+            class="portfolio-item-wrapper"
+          >
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/bandersnatch.jpg)"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/bandersnatch.png" />
+              </div>
+              <div class="subtitle">
+                A basic adventure game console inspired from the movie Black
+                Mirror: Bandersnatch, built with C++.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const portfolioItems = document.querySelectorAll(".portfolio-item-wrapper");
+
+    portfolioItems.forEach((portfolioItem) => {
+      portfolioItem.addEventListener("mouseover", () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.add("img-darken");
+      });
+
+      portfolioItem.addEventListener("mouseout", () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.remove("img-darken");
+      });
+    });
+  </script>
+</html>
