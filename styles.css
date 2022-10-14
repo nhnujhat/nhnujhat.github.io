@@ -25,6 +25,10 @@ body {
     display: flex;
 }
 
+.gmail {
+    margin-right: 10px;
+}
+
 .linkedin {
     margin-right: 10px;
 }
@@ -132,9 +136,9 @@ body {
     filter: brightness(95%);
   }
   
-  .profile-content-wrapper {
+.profile-content-wrapper {
     padding: 30px;
-  }
+}
 
 .profile-content-wrapper h1 {
     color: darkcyan;
