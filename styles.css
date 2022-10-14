@@ -126,20 +126,32 @@ body {
 /* About Page Styles */
 .two-column-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.profile-image-wrapper {
+    padding-left: 30%;
+    padding-right: 30%;
 }
 
 .profile-image-wrapper img {
-    width: 80%;
-    margin-left: 50px;
-    padding: 30px;
+    width: 100%;
     filter: brightness(95%);
   }
   
 .profile-content-wrapper {
-    padding: 30px;
+    padding: 5%;
+    margin-left: 10px;
 }
 
 .profile-content-wrapper h1 {
     color: darkcyan;
+}
+
+.profile-content-wrapper h2 {
+    color: gray;
+}
+
+.profile-content-wrapper a {
+    color: black;
 }
