@@ -2,12 +2,12 @@
 body {
     font-family: "Lato", sans-serif;
     margin: 0px;
-    background-color: lightgray;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr;
+    background-color: rgb(241, 241, 241);
 }
 
 /* Nav Styles */
@@ -15,13 +15,18 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 38px;
+    position: sticky;
+    top: 0;
+    background-color: lightgray;
 }
 
 .left-side {
+    float: left;
     display: flex;
 }
 
 .right-side {
+    float: right;
     display: flex;
 }
 
@@ -140,23 +145,25 @@ body {
 
 /* About Page Styles */
 .two-column-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .profile-image-wrapper {
-    padding-left: 30%;
-    padding-right: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .profile-image-wrapper img {
-    width: 100%;
-    filter: brightness(95%);
+    width: auto;
+    height: 300px;
+    margin-top: 50px;
   }
   
 .profile-content-wrapper {
-    padding: 5%;
-    margin-left: 10px;
+    margin: 50px;
 }
 
 .profile-content-wrapper h1 {
@@ -164,7 +171,8 @@ body {
 }
 
 .profile-content-wrapper h2 {
-    color: gray;
+    margin-top: 50px;
+    color: rgb(155, 155, 155);
 }
 
 .profile-content-wrapper a {
@@ -175,11 +183,50 @@ body {
     line-height: 2;
 }
 
+.profile-content-wrapper p a {
+    text-decoration: none;
+}
+
 .skill {
-    padding: 15px;
+    margin-left: 50px;
+    margin-bottom: 50px;
 }
 
 .skill img {
     height: 50px;
     margin: 15px;
+}
+
+.resume {
+    position: relative;
+    height: 100px;
+}
+
+.resume-wrapper {
+    margin: 0 auto;
+    left: 50px;
+    position: absolute;
+    border: 1px solid;
+    transition: color 0.5s;
+    width: 120px;
+    padding: 18px;
+    text-align: center;
+}
+
+.resume-wrapper:hover {
+    transition: 0.5s;
+    background-color: black;
+}
+
+.resume-wrapper a {
+    color: black;
+    transition: 0.5s;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.resume-wrapper:hover a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
 }
