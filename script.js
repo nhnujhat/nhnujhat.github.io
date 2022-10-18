@@ -10,4 +10,11 @@ portfolioItems.forEach((portfolioItem) => {
       console.log(portfolioItem.childNodes[1].classList);
       portfolioItem.childNodes[1].classList.remove("img-darken");
     });
-  });
+});
+
+const parallax = document.getElementById("parallax");
+
+window.addEventListener("scroll", function () {
+  let offset = window.pageYOffset;
+  parallax.style.backgroundPositionY = -offset * 0.1 + "px";
+});
