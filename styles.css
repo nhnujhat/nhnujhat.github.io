@@ -7,7 +7,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: rgb(241, 241, 241);
+    background-color: white;
 }
 
 /* Nav Styles */
@@ -17,7 +17,7 @@ body {
     padding: 38px;
     position: sticky;
     top: 0;
-    background-color: lightgray;
+    background-color: darkcyan;
 }
 
 .left-side {
@@ -43,7 +43,7 @@ body {
 }
 
 .brand a {
-    color: maroon;
+    color: white;
     font-weight: 500;
     text-decoration: none;
 }
@@ -61,7 +61,7 @@ body {
 }
 
 .nav-link-wrapper a {
-    color: #8a8a8a;
+    color: white;
     text-decoration: none;
     transition: color 0.5s;
 }
@@ -88,12 +88,20 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media screen and (max-width: 800px) {
+    .portfolio-items-wrapper {
+        flex: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .portfolio-item-wrapper {
     position: relative;
 }
 
 .portfolio-img-background {
-    height: 25vw;
+    height: 30vh;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -145,47 +153,35 @@ body {
 }
 
 /* About Page Styles */
-.two-column-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .profile-image-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.profile-image-wrapper img {
-    width: auto;
-    height: 300px;
-    margin-top: 50px;
-  }
-  
-.profile-content-wrapper {
-    margin: 50px;
+.about-wrapper {
+    background-color: darkcyan;
+    padding: 50px;
+    color: white;
 }
 
-.profile-content-wrapper h1 {
+.about-wrapper h1 {
+    color: white;
+    font-weight: 600;
+}
+
+.skills-wrapper {
+    padding: 50px;
     color: darkcyan;
 }
 
-.profile-content-wrapper h2 {
-    margin-top: 50px;
-    color: rgb(155, 155, 155);
-}
-
-.profile-content-wrapper a {
-    color: black;
-}
-
-.profile-content-wrapper p {
-    line-height: 2;
-}
-
-.profile-content-wrapper p a {
-    text-decoration: none;
+.skills-wrapper h1 {
+    color: darkcyan;
+    font-weight: 600;
 }
 
 .skill {
@@ -198,7 +194,51 @@ body {
     margin: 15px;
 }
 
-.mailto a {
+.achievement-wrapper {
+    background-color: darkcyan;
+    padding: 50px;
+    color: white;
+}
+
+.achievement-wrapper h1 {
+    color: white;
+    font-weight: 600;
+}
+
+.research-wraper {
+    padding: 50px;
+    color: darkcyan;
+}
+
+.research-wraper h1 {
+    color: darkcyan;
+    font-weight: 600;
+}
+
+.experience-wrapper {
+    background-color: darkcyan;
+    padding: 50px;
+    color: white;
+}
+
+.experience-wrapper h1 {
+    color: white;
+    font-weight: 600;
+}
+
+.contact-wrapper {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-wrapper h2 {
+    color: rgb(155, 155, 155);
+}
+
+.contact-wrapper a {
     color: blue;
     font-weight: 500;
     font-size: large;
@@ -206,35 +246,25 @@ body {
 }
 
 .resume {
-    position: relative;
-    height: 100px;
+    margin-bottom: 50px;
 }
 
-.resume-wrapper {
+.resume a {
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
-    left: 50px;
-    position: absolute;
-    border: 1px solid;
+    position: relative;
+    border: 1px solid black;
     transition: color 0.5s;
     width: 120px;
     padding: 18px;
     text-align: center;
-}
-
-.resume-wrapper:hover {
-    transition: 0.5s;
-    background-color: black;
-}
-
-.resume-wrapper a {
+    text-decoration: none;
     color: black;
-    transition: 0.5s;
-    font-weight: 600;
-    text-decoration: none;
 }
 
-.resume-wrapper:hover a {
+.resume a:hover {
+    transition: 0.5s;
     color: white;
-    font-weight: 600;
-    text-decoration: none;
+    background-color: black;
 }
