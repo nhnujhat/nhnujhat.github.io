@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nafisa Hossain Nujat | About Me</title>
+    <title>Nafisa Hossain Nujat | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Nafisa Hossain Nujat</h1>
-            <p>Software Developer | NLP Enthusiast</p>
-            <nav>
+    <header class="site-header">
+        <div class="container nav-shell">
+            <a class="brand" href="index.html" aria-label="Nafisa Hossain Nujat home">
+                <span class="brand-mark">NN</span>
+                <span>Nafisa Hossain Nujat</span>
+            </a>
+            <nav aria-label="Primary navigation">
                 <ul>
-                    <li><a href="index.html">About Me</a></li>
+                    <li><a class="active" href="index.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -22,177 +26,174 @@
         </div>
     </header>
 
-    <!-- About Me Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a Computer Science graduate with a solid foundation in both theory and technical skills. I'm currently working as a Software Designer while also pursuing a Master's degree in Software, Web & Cloud. Over the years, I've developed a strong command of various programming languages and frameworks, and I'm well-versed in database management and development tools. I have a genuine passion for problem-solving, and this has driven me to excel in competitive programming. I'm continuously looking to apply my technical skills and enthusiasm for coding in a role that offers both challenges and opportunities for growth.</p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill">
-                    <img src="https://img.icons8.com/color/48/000000/c-sharp-logo.png" alt="C#">
-                    <p>C#</p>
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Software Developer · NLP Enthusiast</p>
+                    <h1>Hi, I'm Nafisa.</h1>
+                    <p class="hero-text">I'm a software developer in Finland, currently working as a Software Designer and studying Software, Web & Cloud at Tampere University. I like building practical web and cloud software, and I have a soft spot for NLP research.</p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="projects.html">Projects</a>
+                        <a class="button secondary" href="RESUME - Nafisa Nujat.pdf" download>CV</a>
+                    </div>
                 </div>
-                <div class="skill">
-                    <img src="https://img.icons8.com/color/48/000000/net-framework.png" alt=".NET">
-                    <p>.NET</p>
-                </div>                
-                <div class="skill">
-                    <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="React.js">
-                    <p>React.js</p>
-                </div>
-                <div class="skill">
-                    <img src="https://img.icons8.com/color/48/000000/vue-js.png" alt="Vue.js">
-                    <p>Vue.js</p>
-                </div>
-                <div class="skill">
-                    <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js">
-                    <p>Node.js</p>
-                </div>
-                <div class="skill">
-                    <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML">
-                    <p>HTML</p>
-                </div>
-                <div class="skill">
-                    <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS">
-                    <p>CSS</p>
-                </div>
-                <div class="skill">
-                    <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript">
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill">
-                    <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java">
-                    <p>Java</p>
-                </div>
-                <div class="skill">
-                    <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python">
-                    <p>Python</p>
-                </div>
-                <div class="skill">
-                    <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="C++">
-                    <p>C++</p>
-                </div>
-                <div class="skill">
-                    <img src="https://img.icons8.com/color/48/000000/sql.png" alt="SQL">
-                    <p>SQL</p>
-                </div>
-                <div class="skill">
-                    <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git">
-                    <p>Git</p>
-                </div>
-                <div class="skill">
-                    <img src="https://img.icons8.com/color/48/000000/azure-1.png" alt="Microsoft Azure">
-                    <p>Microsoft Azure</p>
-                </div>
-                <div class="skill">
-                    <img src="https://img.icons8.com/color/48/000000/flutter.png" alt="Flutter">
-                    <p>Flutter</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work Experience Section -->
-    <section id="experience" class="section">
-        <div class="container">
-            <h2>Work Experience</h2>
-            <div class="job experience-card">
-                <h3>Software Designer - Beamex Oy Ab</h3>
-                <p><strong>Feb 2025 - Present, Finland</strong></p>
-                <div class="experience-details">
+                <aside class="quick-notes" aria-label="Quick notes">
+                    <p>Currently</p>
+                    <h2>Software Designer at Beamex Oy Ab</h2>
                     <ul>
-                        <li>Design and develop software solutions for calibration management</li>
-                        <li>Collaborate with cross-functional teams to enhance software performance</li>
-                        <li>Implement software features using modern technologies and best practices</li>
-                        <li>Conduct testing, debugging, and optimization to improve system eﬃciency</li>
+                        <li>Based in Finland</li>
+                        <li>MSc student at Tampere University</li>
+                        <li>Interested in web, cloud, and NLP</li>
                     </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container split-section">
+                <div>
+                    <p class="section-kicker">About</p>
+                    <h2>A little about me</h2>
+                </div>
+                <p>I'm a Computer Science graduate with experience in full-stack development, databases, cloud technologies, mobile apps, and natural language processing. I enjoy problem-solving, learning by building, and improving software little by little until it feels clear and reliable.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section tinted">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Skills</p>
+                    <h2>Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill"><img src="https://img.icons8.com/color/48/000000/c-sharp-logo.png" alt=""><span>C#</span></div>
+                    <div class="skill"><img src="https://img.icons8.com/color/48/000000/net-framework.png" alt=""><span>.NET</span></div>
+                    <div class="skill"><img src="https://img.icons8.com/color/48/000000/react-native.png" alt=""><span>React.js</span></div>
+                    <div class="skill"><img src="https://img.icons8.com/color/48/000000/vue-js.png" alt=""><span>Vue.js</span></div>
+                    <div class="skill"><img src="https://img.icons8.com/color/48/000000/nodejs.png" alt=""><span>Node.js</span></div>
+                    <div class="skill"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt=""><span>HTML</span></div>
+                    <div class="skill"><img src="https://img.icons8.com/color/48/000000/css3.png" alt=""><span>CSS</span></div>
+                    <div class="skill"><img src="https://img.icons8.com/color/48/000000/javascript.png" alt=""><span>JavaScript</span></div>
+                    <div class="skill"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt=""><span>Java</span></div>
+                    <div class="skill"><img src="https://img.icons8.com/color/48/000000/python.png" alt=""><span>Python</span></div>
+                    <div class="skill"><img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt=""><span>C++</span></div>
+                    <div class="skill"><img src="https://img.icons8.com/color/48/000000/sql.png" alt=""><span>SQL</span></div>
+                    <div class="skill"><img src="https://img.icons8.com/color/48/000000/git.png" alt=""><span>Git</span></div>
+                    <div class="skill"><img src="https://img.icons8.com/color/48/000000/azure-1.png" alt=""><span>Azure</span></div>
+                    <div class="skill"><img src="https://img.icons8.com/color/48/000000/flutter.png" alt=""><span>Flutter</span></div>
                 </div>
             </div>
-            <div class="job experience-card">
-                <h3>Fullstack Developer - Diffo Solutions Oy</h3>
-                <p><strong>Dec 2023 - Jan 2025, Oulu, Finland</strong></p>
-                <div class="experience-details">
-                    <ul>
-                        <li>Develop and maintain RESTful APIs</li>
-                        <li>Implement and optimize databases</li>
-                        <li>Develop microservices and integrate the application with third-party APIs</li>
-                        <li>Address and fix bugs, create unit tests and contribute to ongoing maintenance</li>
-                    </ul>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Experience</p>
+                    <h2>Work Experience</h2>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-card">
+                        <div>
+                            <p class="date">Feb 2025 - Present</p>
+                            <h3>Software Designer</h3>
+                            <p class="meta">Beamex Oy Ab · Finland</p>
+                        </div>
+                        <ul>
+                            <li>Design and develop software solutions for calibration management.</li>
+                            <li>Collaborate with cross-functional teams to improve performance and reliability.</li>
+                            <li>Implement features with modern technologies, testing, debugging, and optimization.</li>
+                        </ul>
+                    </article>
+                    <article class="timeline-card">
+                        <div>
+                            <p class="date">Dec 2023 - Jan 2025</p>
+                            <h3>Fullstack Developer</h3>
+                            <p class="meta">Diffo Solutions Oy · Oulu, Finland</p>
+                        </div>
+                        <ul>
+                            <li>Developed and maintained RESTful APIs and microservices.</li>
+                            <li>Implemented and optimized databases for production applications.</li>
+                            <li>Integrated third-party APIs, fixed bugs, and contributed unit tests.</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-card">
-                <h3>MSc in Computing Sciences (Software, Web & Cloud)</h3>
-                <p><strong>Tampere University</strong> | Aug 2023 - Present | Tampere, Finland</p>
-                <p>Focus: Software development, web technologies, cloud computing.</p>
+        <section id="education" class="section tinted">
+            <div class="container two-column">
+                <div>
+                    <p class="section-kicker">Education</p>
+                    <h2>Education</h2>
+                </div>
+                <div class="stacked-cards">
+                    <article class="info-card">
+                        <h3>MSc in Computing Sciences</h3>
+                        <p class="meta">Tampere University · Aug 2023 - Present · Tampere, Finland</p>
+                        <p>Focus: Software development, web technologies, and cloud computing.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>BSc in Computer Science and Engineering</h3>
+                        <p class="meta">Islamic University of Technology · Jan 2019 - May 2023 · Gazipur, Bangladesh</p>
+                        <p>Focus: Programming, databases, software engineering, and AI technologies.</p>
+                    </article>
+                </div>
             </div>
-            <div class="education-card">
-                <h3>BSc in Computer Science and Engineering</h3>
-                <p><strong>Islamic University of Technology</strong> | Jan 2019 - May 2023 | Gazipur, Bangladesh</p>
-                <p>Focus: Programming, databases, software engineering, AI technologies.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Honors and Awards Section -->
-    <section id="awards" class="section">
-        <div class="container">
-            <h2>Honors and Awards</h2>
-            <div class="award-card">
-                <h3>2nd Runner Up, Girls' Mobile Application Development Contest</h3>
-                <p><strong>BdApps</strong> | 2021</p>
+        <section id="publications" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Research</p>
+                    <h2>Publications and Awards</h2>
+                </div>
+                <div class="feature-grid">
+                    <article class="info-card">
+                        <span class="pill">NLDB 2024</span>
+                        <h3>Unveiling Depression on Social Media</h3>
+                        <p>Active learning with human-in-the-loop labeling for mental health data annotation and analysis.</p>
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-70239-6_6">Read Publication</a>
+                    </article>
+                    <article class="info-card">
+                        <span class="pill">ACL SRW 2024</span>
+                        <h3>When Words Fail, Emojis Prevail</h3>
+                        <p>A novel architecture for generating sarcastic sentences with emoji using valence reversal and semantic incongruity.</p>
+                        <a href="https://aclanthology.org/2023.acl-srw.47/">Read Publication</a>
+                    </article>
+                    <article class="info-card">
+                        <span class="pill">Award</span>
+                        <h3>Girls' Mobile Application Development Contest</h3>
+                        <p>2nd Runner Up, BdApps, 2021.</p>
+                    </article>
+                    <article class="info-card">
+                        <span class="pill">Award</span>
+                        <h3>Creative Talent Hunt Competition</h3>
+                        <p>District Champion in Mathematics and Computer, Government of Bangladesh, 2013.</p>
+                    </article>
+                </div>
             </div>
-            <div class="award-card">
-                <h3>District Champion, Mathematics and Computer, Creative Talent Hunt Competition</h3>
-                <p><strong>Government of Bangladesh</strong> | 2013</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Publications Section -->
-    <section id="publications" class="section">
-        <div class="container">
-            <h2>Publications</h2>
-            <div class="publication-card">
-                <strong>Unveiling Depression on Social Media: Active Learning with Human-in-the-Loop Labeling for Mental Health Data Annotation and Analysis</strong><br>
-                <p>Published in the 29th International Conference on Applications of Natural Language to Information Systems, NLDB 2024.</p>
-                <a href="https://link.springer.com/chapter/10.1007/978-3-031-70239-6_6">Read Publication</a>
+        <section id="contact" class="contact-section">
+            <div class="container contact-card">
+                <div>
+                    <p class="section-kicker">Contact</p>
+                    <h2>Find me here</h2>
+                </div>
+                <div class="contact-links" aria-label="Contact links">
+                    <a href="mailto:nhnujhat@gmail.com">nhnujhat@gmail.com</a>
+                    <a href="https://linkedin.com/in/nhnujhat">LinkedIn</a>
+                    <a href="https://github.com/nhnujhat">GitHub</a>
+                    <a href="RESUME - Nafisa Nujat.pdf" download>Download CV</a>
+                </div>
             </div>
-            <div class="publication-card">
-                <strong>When Words Fail, Emojis Prevail: A Novel Architecture for Generating Sarcastic Sentences with Emoji Using Valence Reversal and Semantic Incongruity</strong><br>
-                <p>Published in the Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics, Student Research Workshop 2024.</p>
-                <a href="https://aclanthology.org/2023.acl-srw.47/">Read Publication</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:nhnujhat@gmail.com">nhnujhat@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/nhnujhat">linkedin.com/in/nhnujhat</a></p>
-            <p>GitHub: <a href="https://github.com/nhnujhat">github.com/nhnujhat</a></p>
-            <p><a href="RESUME - Nafisa Nujat.pdf" download>Download CV</a></p>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Nafisa Hossain Nujat</p>
+            <p>&copy; 2026 Nafisa Hossain Nujat</p>
         </div>
     </footer>
 </body>
